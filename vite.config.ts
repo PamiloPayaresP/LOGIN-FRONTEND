@@ -7,12 +7,4 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  server: {
-    proxy: {
-      '/api': {
-        target: 'https://login-backend-dvh6.onrender.com',
-        changeOrigin: true,
-      },
-    },
-  },
 });
